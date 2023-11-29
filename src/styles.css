@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+.mat-snack-bar-container {
+  background-color: #fff !important;
+ }
+
+ body {
+  background-color: #7c7070; /* Light grey color */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}

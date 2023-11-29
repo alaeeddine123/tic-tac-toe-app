@@ -1,0 +1,127 @@
+
+
+/* Add styles to center the login form and style social buttons */
+.login-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+mat-card {
+  width: 400px;
+}
+
+mat-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 10px;
+
+ }
+mat-card-header {
+  text-align: center; /* Center the text within mat-card-header and mat-card-title */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+mat-form-field.mat-form-field {
+ border-radius: 10px;
+ overflow: hidden;
+ background-color: #f5f5f5;
+ border: 1px solid #e8e8e8;
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+ transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+mat-form-field.mat-form-field:hover {
+ box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+mat-form-field.mat-form-field:focus-within {
+ border-color: #5c6bc0;
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24), 0 4px 8px rgba(92, 184, 255, 0.5);
+}
+
+mat-form-field input {
+  color: rgba(169, 177, 175, 0.295);
+  font-size: 18px;
+}
+
+mat-form-field.mat-form-field ::ng-deep .mat-form-field-label {
+  font-size: 14px;
+  color: #999;
+ }
+ 
+ mat-form-field.mat-form-field ::ng-deep .mat-form-field-infix {
+  padding: 8px 0;
+ }
+ 
+ mat-form-field.mat-form-field ::ng-deep .mat-form-field-ripple {
+  overflow: hidden;
+  transform: translate(-10px, 0);
+ }
+ 
+ mat-form-field.mat-form-field ::ng-deep .mat-form-field-flex {
+  align-items: flex-start;
+ }
+
+.login-button {
+  margin-top: 20px;
+  background-color: green;
+  color: #efef33;
+  font-size: 18px;
+}
+
+.social-buttons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Google {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Facebook {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #40ff70;
+}
+
+/* Set the primary color to blue */
+.mat-primary .mat-raised-button,
+.mat-primary .mat-flat-button,
+.mat-primary .mat-stroked-button {
+  background-color: #ecf321; /* Use your preferred shade of blue */
+  color: #060603; /* Set text color to white or another contrasting color */
+}
+
+/* Set the warn color (for the Google button) to a contrasting color, e.g., red */
+.mat-warn .mat-raised-button,
+.mat-warn .mat-flat-button,
+.mat-warn .mat-stroked-button {
+  background-color: #FF4081; /* Use your preferred shade of red */
+  color: #ffffff; /* Set text color to white or another contrasting color */
+}
+
+/* Optional: Add some spacing between social buttons */
+.social-buttons button {
+  margin-right: 10px;
+}
+
+
+.mat-snack-bar-container {
+  background-color: #40ff70 ;
+ }
+
+ .mat-snack-bar-container {
+  background-color: #272727 !important;
+ }
