@@ -11,12 +11,16 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MenubarComponent } from './menubar/menubar.component';
 import { HomeComponent } from './home/home.component';
-import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { GridComponent } from './grid/grid.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDialogModule } from '@angular/material/dialog';
+import { PopupDialogComponent } from './popup/popup-dialog/popup-dialog.component';
+
 
 
 
@@ -28,8 +32,10 @@ import { MatInputModule } from '@angular/material/input';
     AppComponent,
     MenubarComponent,
     HomeComponent,
-    AutocompleteComponent,
-    LoginComponent
+    LoginComponent,
+    GridComponent,
+    GridComponent,
+    PopupDialogComponent
   ],
   imports: [
     MatSlideToggleModule,
@@ -46,7 +52,9 @@ import { MatInputModule } from '@angular/material/input';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatGridListModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

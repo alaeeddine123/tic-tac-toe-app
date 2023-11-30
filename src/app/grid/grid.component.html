@@ -1,0 +1,16 @@
+<!-- grid.component.html -->
+<div class="grid-container">
+    <mat-grid-list cols="3" gutterSize="16px">
+      <mat-grid-tile *ngFor="let cell of cells">
+        <!-- Use a button for each cell -->
+        <button mat-button class="cell" (click)="onCellClick(cell)">
+          {{ cell.value }}
+        </button>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  
+  <div *ngIf="gameWinner" class="winner">
+    Player {{ gameWinner }} wins!
+  </div>
+  

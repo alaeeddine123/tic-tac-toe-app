@@ -1,0 +1,15 @@
+
+<div class="snackbar-container"></div>
+
+
+<mat-toolbar color="primary">
+    <span>Tictactoe  X O</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <div>
+    <!-- Other content for the home component -->
+    <app-grid (winnerFound)="onWinnerFound($event)"></app-grid>

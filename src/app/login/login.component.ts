@@ -14,6 +14,8 @@ import { MatInputModule } from '@angular/material/input';
 export class LoginComponent  implements OnInit{
   [x: string]: any;
   loginForm!: FormGroup;
+  isLoggedIn: boolean = false;  
+
   constructor(private fb: FormBuilder , private snackBar: MatSnackBar , private router:Router) { }
 
   ngOnInit(): void {
@@ -38,14 +40,14 @@ export class LoginComponent  implements OnInit{
       const password = this.loginForm.value.password;   
 
       this.authenticate(username, password);
-    }
+     }
   }
 
   private authenticate(username: string, password: string): void {
     if (username === 'admin' && password === 'admin') {
       console.log('Authentication successful!');
       this.showSnackBar('Login successful!');
-      //this.router.navigate(['/home']);
+      this.router.navigate(['/home']);
     } else {
       console.log('Authentication failed. Invalid username or password.');
       // Display an error message or take appropriate action
@@ -55,8 +57,8 @@ export class LoginComponent  implements OnInit{
 
   private showSnackBar(message: string): void {
     this.snackBar.open(message, 'Close', {
-      duration: 3000,  
-      verticalPosition: 'top'  
+      duration: 2000,  
+      
     });
   }
 }

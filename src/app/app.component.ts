@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
+import { AuthenticationService } from './auth.service';
 
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'] 
 })
+ 
 export class AppComponent {
-  title = 'my-app';
-}
+  constructor(private authService: AuthenticationService) {}
+ 
+  onSubmit() {
+     this.authService.login();
+  }
+ }

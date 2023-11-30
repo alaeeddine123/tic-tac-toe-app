@@ -14,10 +14,10 @@ mat-card {
 }
 
 mat-card-title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  margin-top: 16px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 5px;
 
  }
 mat-card-header {
@@ -46,13 +46,13 @@ mat-form-field.mat-form-field:hover {
 }
 
 mat-form-field.mat-form-field:focus-within {
- border-color: #5c6bc0;
+ border-color: rgb(15, 236, 118);
  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24), 0 4px 8px rgba(92, 184, 255, 0.5);
 }
 
 mat-form-field input {
   color: rgba(169, 177, 175, 0.295);
-  font-size: 18px;
+  font-size: 14px;
 }
 
 mat-form-field.mat-form-field ::ng-deep .mat-form-field-label {
@@ -61,7 +61,7 @@ mat-form-field.mat-form-field ::ng-deep .mat-form-field-label {
  }
  
  mat-form-field.mat-form-field ::ng-deep .mat-form-field-infix {
-  padding: 8px 0;
+  padding: 4px 0;
  }
  
  mat-form-field.mat-form-field ::ng-deep .mat-form-field-ripple {
@@ -78,22 +78,30 @@ mat-form-field.mat-form-field ::ng-deep .mat-form-field-label {
   background-color: green;
   color: #efef33;
   font-size: 18px;
+  height: 40px; /* Adjust the height to make the button taller */
+  width: 210px;
 }
 
-.social-buttons {
-  margin-top: 20px;
-  margin-bottom: 20px;
+ 
+
+.Google button {
+  background-color: #EA4335 ;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: inherit  ; /* Adjust the font size to your preference */
+  height: 40px; /* Adjust the height to make the button taller */
+  width: 210px;
 }
 
-.Google {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.Facebook {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #40ff70;
+.Facebook button{
+  background-color: #316FF6;
+  font-size: inherit; /* Use the font size from the parent element */
+  height: 40px; /* Adjust the height to make the button taller */
+  width: 210px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+ 
+  
 }
 
 /* Set the primary color to blue */
