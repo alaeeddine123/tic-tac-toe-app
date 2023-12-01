@@ -20,15 +20,17 @@ export class HomeComponent {
     private popupService : PopupService){}
 
    
-    openPopup(gameWinner: string): void {
+    openPopup(gameWinner: string, closeButton: boolean = false): void {
       const dialogRef: MatDialogRef<any> = this.popupService.openPopup(`The winner is player: ${gameWinner}`, gameWinner);
   
       const duration = 3000;  
       this.dialog.open(MatDialog);
   
-       setTimeout(() => {
-        dialogRef.close();
-      }, duration);
+      if (!closeButton){
+        setTimeout(() => {
+          dialogRef.close();
+        }, duration);
+      }
     }
 
 
