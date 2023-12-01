@@ -2,7 +2,10 @@ import { Component } from '@angular/core';
 import { PopupService } from '../popup/popup.service';
 import { MatDialog , MatDialogRef } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { AuthenticationService } from '../auth.service';
 
+
+/* TODO : setup auth guard  fot home page and other pages check if user is logged in */
 
 
 @Component({
@@ -17,6 +20,7 @@ export class HomeComponent {
   constructor(
     private dialog: MatDialog,
     private snackBar: MatSnackBar,
+    private authService: AuthenticationService,
     private popupService : PopupService){}
 
    
@@ -31,6 +35,10 @@ export class HomeComponent {
           dialogRef.close();
         }, duration);
       }
+    }
+
+    logout(): void {
+      this.authService.logout();
     }
 
 
