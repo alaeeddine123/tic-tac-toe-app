@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { GameService } from '../popup/game.service';
 import { GridService } from './grid.service';
 import { Output, EventEmitter } from '@angular/core';
 
@@ -24,7 +23,7 @@ export class GridComponent {
   @Output()  winnerFound = new EventEmitter<any>();
 
  
-  constructor(private gridService: GridService) {}
+  constructor() {}
 
   cells: Cell[] = Array.from({ length: 9 }, () => ({ value: null }));
   currentPlayer: 'X' | 'O' = 'X';

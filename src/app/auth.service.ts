@@ -6,15 +6,20 @@ import { Router } from '@angular/router';
 })
 export class AuthenticationService {
 
-   constructor(private router: Router) {}
+   constructor(private router: Router ) {}
  isLoggedIn = false;
 
  login() {
     this.isLoggedIn = true;
+ 
  }
 
  logout() {
     this.isLoggedIn = false;
     this.router.navigate(['/login']);
  }
+ isAuthenticated(): boolean {
+   return this.isAuthenticated();
+ }
+
 }
